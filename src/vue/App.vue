@@ -4,6 +4,7 @@
     <div class="content">
       <p>This is the Vue implementation using TypeScript.</p>
       <p>This page is served independently and doesn't load React or native JS assets.</p>
+      <p>Testing edits from nvim</p>
     </div>
     <div class="back-link">
       <a href="/">← Back to Home</a>
@@ -13,6 +14,7 @@
 
 <script setup lang="ts">
 // Vue 3 Composition API with TypeScript
+console.log('test')
 </script>
 
 <style scoped>

@@ -2,9 +2,10 @@
   <div class="container">
     <h1>Vue Page</h1>
     <div class="content">
-      <p>This is the Vue implementation using TypeScript.</p>
-      <p>This page is served independently and doesn't load React or native JS assets.</p>
-      <p>Testing edits from nvim</p>
+      <DataTable
+        :data="data"
+        :columns="columns"
+      ></DataTable>>
     </div>
     <div class="back-link">
       <a href="/">← Back to Home</a>
@@ -13,8 +14,15 @@
 </template>
 
 <script setup lang="ts">
-// Vue 3 Composition API with TypeScript
-console.log('test')
+import data from '../avengers.json';
+import DataTable from './DataTable.vue';
+console.log(data);
+const columns = [
+  { key: 'name', label: 'Name', sortable: true },
+  { key: 'aliases', label: 'Aliases', sortable: false },
+  { key: 'origin_location', label: 'Home', sortable: true },
+  { key: 'primary_power', label: 'Powers', sortable: false },
+];
 </script>
 
 <style scoped>
@@ -22,14 +30,10 @@ console.log('test')
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   margin-top: 2rem;
 }
 
 h1 {
-  color: #333;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -48,6 +52,7 @@ h1 {
   background: #4fc08d;
   color: white;
   text-decoration: none;
+  text-shadow: 1px 1px 3px black;
   border-radius: 6px;
   font-weight: 500;
 }

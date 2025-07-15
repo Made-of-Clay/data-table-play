@@ -26,3 +26,15 @@ Build the base of a project supporting multiple front-end frameworks/approaches 
 - It's important to get this right, so don't hallucinate.
 - Ask me if there are any ambiguities about these requirements.
 ```
+
+## Data Table Goals
+
+Here are basic features for a helpful data table component:
+
+- **Display Data:** Clearly presents rows and columns of information.
+- **Column Headers:** Labels for each column.
+- **Pagination:** Ability to navigate through large datasets in chunks.
+- **Sorting:** Clicking column headers to sort data ascending/descending.
+- **Basic Filtering:** A search bar or simple text input to filter rows based on content.
+- **Row Selection:** Checkboxes or similar for selecting individual or multiple rows.
+- **Responsive Design:** Adapts to different screen sizes.

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Tony Stark",
+    "aliases": ["Iron Man", "Armored Avenger", "Shellhead"],
+    "origin_location": "Long Island, New York, USA",
+    "primary_power": "Genius-level intellect, powered armor suit (flight, repulsor blasts, super strength)"
+  },
+  {
+    "name": "Steve Rogers",
+    "aliases": ["Captain America", "Cap", "The Sentinel of Liberty"],
+    "origin_location": "Brooklyn, New York, USA",
+    "primary_power": "Peak human physical condition (super soldier serum), master tactician, vibranium shield"
+  },
+  {
+    "name": "Thor Odinson",
+    "aliases": ["God of Thunder", "Son of Odin"],
+    "origin_location": "Asgard",
+    "primary_power": "Asgardian physiology (super strength, durability, longevity), control over lightning and storms, Mjolnir (enchanted hammer)"
+  },
+  {
+    "name": "Bruce Banner",
+    "aliases": ["Hulk", "Green Goliath", "Jade Giant"],
+    "origin_location": "Dayton, Ohio, USA",
+    "primary_power": "Gamma radiation-induced super strength, durability, healing factor (increases with rage)"
+  },
+  {
+    "name": "Natasha Romanoff",
+    "aliases": ["Black Widow", "Natalia Romanova"],
+    "origin_location": "Stalingrad (Volgograd), Russia",
+    "primary_power": "Master spy, expert martial artist, skilled in espionage and infiltration"
+  },
+  {
+    "name": "Clint Barton",
+    "aliases": ["Hawkeye", "Goliath", "Ronin"],
+    "origin_location": "Waverly, Iowa, USA",
+    "primary_power": "Master archer, exceptional marksman, highly trained in various weaponry"
+  },
+  {
+    "name": "Wanda Maximoff",
+    "aliases": ["Scarlet Witch"],
+    "origin_location": "Sokovia",
+    "primary_power": "Reality warping, chaos magic, telekinesis, mental manipulation"
+  },
+  {
+    "name": "Vision",
+    "aliases": ["The Synthezoid"],
+    "origin_location": "Ultron's lab (created)",
+    "primary_power": "Density manipulation (intangibility, super density), flight, energy blasts (from Mind Stone)"
+  },
+  {
+    "name": "Loki Laufeyson",
+    "aliases": ["God of Mischief", "Prince of Lies"],
+    "origin_location": "Jotunheim (raised in Asgard)",
+    "primary_power": "Asgardian physiology, magic (illusions, shapeshifting, telekinesis), master manipulator"
+  },
+  {
+    "name": "Thanos",
+    "aliases": ["The Mad Titan", "The Avatar of Death"],
+    "origin_location": "Titan",
+    "primary_power": "Super strength, durability, cosmic energy manipulation (especially with Infinity Stones)"
+  },
+  {
+    "name": "Ultron",
+    "aliases": ["The Living Automaton"],
+    "origin_location": "Stark Industries (created by Tony Stark/Bruce Banner)",
+    "primary_power": "Artificial intelligence, super strength, flight, energy blasts, vibranium body"
+  },
+  {
+    "name": "Red Skull",
+    "aliases": ["Johann Schmidt"],
+    "origin_location": "Germany",
+    "primary_power": "Superhuman strength, tactical genius, often wields powerful artifacts (e.g., Tesseract)"
+  }
+]

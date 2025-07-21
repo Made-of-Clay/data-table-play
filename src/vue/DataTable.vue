@@ -15,9 +15,20 @@
                         @click="column.sortable ? sortCol(column.key) : null"
                     >
                         {{ column.label }}
+
                         <span v-if="column.sortable" class="dataTable__sort-icon">
                             <!-- TODO add sort toggle display logic -->
-                            ▲
+                            <template v-if="sortDirection.column === column.key">
+                                <template v-if="sortDirection.direction === 'asc'">
+                                    ▲
+                                </template>
+                                <template v-else>
+                                    ▼
+                                </template>
+                            </template>
+                            <template v-else>
+                                ⇅
+                            </template>
                         </span>
                     </td>
                 </tr>
@@ -49,10 +60,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, PropType, ref } from 'vue';
+import { computed, PropType, reactive, ref } from 'vue';
 import { Column } from '../models/Column';
 import { filterData } from '../filterData';
 import { Avenger } from '../models/Avenger';
+import { SortDirection } from '../models/SortDirection';
 
 const props = defineProps({
     data: {
@@ -69,11 +81,27 @@ const props = defineProps({
     },
 });
 
+const sortDirection = reactive<SortDirection>({
+    column: '',
+    direction: 'asc'
+});
+
 function sortCol(key: string) {
-    console.log('sort column by key', key);
-    // TODO write sort function to be shared across all implementations
+    sortDirection.column = key;
+    sortDirection.direction = sortDirection.direction === 'asc' ? 'desc' : 'asc';
 }
 
 const searchTerm = ref('');
-const filteredData = computed(() => filterData<Avenger[]>(props.data, searchTerm.value, props.columns));
+const filteredData = computed(() => filterData<Avenger[]>(props.data, searchTerm.value, sortDirection));
 </script>
+
+<style>
+.dataTable__col {
+    cursor: default;
+    user-select: none;
+    text-wrap: nowrap;;
+}
+.dataTable__col--sortable {
+    cursor: pointer;
+}
+</style>
